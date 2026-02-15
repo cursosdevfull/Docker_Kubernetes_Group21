@@ -14,4 +14,6 @@ docker run -d --name server-mysql \
 ### Client
 ```bash
 docker run -d --name client-mysql -e PMA_ARBITRARY=1 -p 8090:80 phpmyadmin
+docker run -d --name client-mysql -e PMA_HOST=172.17.0.4 -p 8090:80 phpmyadmin
+docker run -d --name client-mysql -e PMA_HOST=172.17.0.4 -e PMA_USER=user -e PMA_PASSWORD=password -p 8090:80 phpmyadmin
 ```
