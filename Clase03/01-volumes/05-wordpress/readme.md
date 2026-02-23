@@ -1,4 +1,0 @@
-- Creen un contenedor de mysql
-- Creen un contenedor de workpress
-- Creen una red para ambos contenedores
-- Debe haber persistencia en ambos contenedores

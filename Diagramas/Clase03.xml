@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.5.2" pages="3">
+  <diagram name="1" id="_D66s8hl_uAKLzHjtbDU">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F1FAEE" math="0" shadow="1">
+      <root>
+        <mxCell id="HOphWXerJYuGj8K8BdVv-0" />
+        <mxCell id="HOphWXerJYuGj8K8BdVv-1" parent="HOphWXerJYuGj8K8BdVv-0" />
+        <mxCell id="HOphWXerJYuGj8K8BdVv-2" parent="HOphWXerJYuGj8K8BdVv-1" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;rounded=0;sketch=0;strokeColor=#457B9D;fillColor=#A8DADC;fontColor=#1D3557;image=https://cursos-dev.com/assets/images/logo-horizontal.png;" value="" vertex="1">
+          <mxGeometry height="80" width="282.99" as="geometry" />
+        </mxCell>
+        <mxCell id="xfuXfp2rVcVC0wK7jsgH-0" parent="HOphWXerJYuGj8K8BdVv-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="600" width="720" x="54" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="xfuXfp2rVcVC0wK7jsgH-1" parent="HOphWXerJYuGj8K8BdVv-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=12 12;" value="" vertex="1">
+          <mxGeometry height="460" width="330" x="414" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="xfuXfp2rVcVC0wK7jsgH-2" parent="HOphWXerJYuGj8K8BdVv-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="SERVER-WEB" vertex="1">
+          <mxGeometry height="160" width="220" x="474" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="xfuXfp2rVcVC0wK7jsgH-3" parent="HOphWXerJYuGj8K8BdVv-1" style="rounded=1;whiteSpace=wrap;html=1;" value="/USR/SHARE/NGINX/HTML" vertex="1">
+          <mxGeometry height="40" width="200" x="484" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="xfuXfp2rVcVC0wK7jsgH-4" edge="1" parent="HOphWXerJYuGj8K8BdVv-1" source="xfuXfp2rVcVC0wK7jsgH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" target="xfuXfp2rVcVC0wK7jsgH-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xfuXfp2rVcVC0wK7jsgH-5" parent="HOphWXerJYuGj8K8BdVv-1" style="rounded=1;whiteSpace=wrap;html=1;" value="WWW" vertex="1">
+          <mxGeometry height="60" width="120" x="154" y="500" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="2" id="gN8pHzmN-1dgS1m3pHFh">
+    <mxGraphModel dx="1426" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F1FAEE" math="0" shadow="1">
+      <root>
+        <mxCell id="RHgr1PvFvTRlS7Rn9c9y-0" />
+        <mxCell id="RHgr1PvFvTRlS7Rn9c9y-1" parent="RHgr1PvFvTRlS7Rn9c9y-0" />
+        <mxCell id="RHgr1PvFvTRlS7Rn9c9y-2" parent="RHgr1PvFvTRlS7Rn9c9y-1" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;rounded=0;sketch=0;strokeColor=#457B9D;fillColor=#A8DADC;fontColor=#1D3557;image=https://cursos-dev.com/assets/images/logo-horizontal.png;" value="" vertex="1">
+          <mxGeometry height="80" width="282.99" as="geometry" />
+        </mxCell>
+        <mxCell id="encEFksguJ_mGAuX5lNt-0" parent="RHgr1PvFvTRlS7Rn9c9y-1" style="rounded=1;whiteSpace=wrap;html=1;" value="RUTA DEL DIRECTORIO O ARCHIVO LOCAL" vertex="1">
+          <mxGeometry height="60" width="240" x="130" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="encEFksguJ_mGAuX5lNt-1" parent="RHgr1PvFvTRlS7Rn9c9y-1" style="rounded=1;whiteSpace=wrap;html=1;" value="RUTA DEL DIRECTORIO O ARCHIVO DEL CONTENEDOR" vertex="1">
+          <mxGeometry height="60" width="240" x="470" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="encEFksguJ_mGAuX5lNt-3" parent="RHgr1PvFvTRlS7Rn9c9y-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="-v &amp;lt;ruta local&amp;gt;:&amp;lt;ruta contenedor&amp;gt;" vertex="1">
+          <mxGeometry height="60" width="427.01" x="210" y="390" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="3" id="lYf7xThiveOagl5sfBWz">
+    <mxGraphModel dx="1426" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F1FAEE" math="0" shadow="1">
+      <root>
+        <mxCell id="QLl59n0uUNbTwkKxXNGZ-0" />
+        <mxCell id="QLl59n0uUNbTwkKxXNGZ-1" parent="QLl59n0uUNbTwkKxXNGZ-0" />
+        <mxCell id="QLl59n0uUNbTwkKxXNGZ-2" parent="QLl59n0uUNbTwkKxXNGZ-1" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;rounded=0;sketch=0;strokeColor=#457B9D;fillColor=#A8DADC;fontColor=#1D3557;image=https://cursos-dev.com/assets/images/logo-horizontal.png;" value="" vertex="1">
+          <mxGeometry height="80" width="282.99" as="geometry" />
+        </mxCell>
+        <mxCell id="cmeWNHuDKxibs9jdoxLv-0" parent="QLl59n0uUNbTwkKxXNGZ-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="460" width="370" x="44" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="cmeWNHuDKxibs9jdoxLv-1" parent="QLl59n0uUNbTwkKxXNGZ-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="INSTALAR LINUX" vertex="1">
+          <mxGeometry height="60" width="330" x="64" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="cmeWNHuDKxibs9jdoxLv-2" parent="QLl59n0uUNbTwkKxXNGZ-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ACTUALIZAR LOS REPOSITORIOS" vertex="1">
+          <mxGeometry height="60" width="330" x="64" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="cmeWNHuDKxibs9jdoxLv-3" parent="QLl59n0uUNbTwkKxXNGZ-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="INSTALAR APACHE" vertex="1">
+          <mxGeometry height="60" width="330" x="64" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="cmeWNHuDKxibs9jdoxLv-4" parent="QLl59n0uUNbTwkKxXNGZ-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="COPIAR LOS ARCHIVOS DE LA APLICACIÓN" vertex="1">
+          <mxGeometry height="60" width="330" x="64" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="cmeWNHuDKxibs9jdoxLv-5" parent="QLl59n0uUNbTwkKxXNGZ-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="INICIAR APACHE" vertex="1">
+          <mxGeometry height="60" width="330" x="64" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="cmeWNHuDKxibs9jdoxLv-6" parent="QLl59n0uUNbTwkKxXNGZ-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="" vertex="1">
+          <mxGeometry height="460" width="370" x="450" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="cmeWNHuDKxibs9jdoxLv-7" parent="QLl59n0uUNbTwkKxXNGZ-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="FROM UBUNTU:24:04" vertex="1">
+          <mxGeometry height="60" width="330" x="470" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="cmeWNHuDKxibs9jdoxLv-8" parent="QLl59n0uUNbTwkKxXNGZ-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="RUN APT-GET UPDATE" vertex="1">
+          <mxGeometry height="60" width="330" x="470" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="cmeWNHuDKxibs9jdoxLv-9" parent="QLl59n0uUNbTwkKxXNGZ-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="RUN APT-GET INSTALL APACHE2" vertex="1">
+          <mxGeometry height="60" width="330" x="470" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="cmeWNHuDKxibs9jdoxLv-10" parent="QLl59n0uUNbTwkKxXNGZ-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="COPY ... ..." vertex="1">
+          <mxGeometry height="60" width="330" x="470" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="cmeWNHuDKxibs9jdoxLv-11" parent="QLl59n0uUNbTwkKxXNGZ-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="CMD &amp;lt;COMANDO DE INICIO DE APACHE&amp;gt;" vertex="1">
+          <mxGeometry height="60" width="330" x="470" y="520" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
