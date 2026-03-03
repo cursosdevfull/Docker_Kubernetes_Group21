@@ -1,0 +1,97 @@
+services:
+  server-mysql:
+    image: mysql:8
+    container_name: server-mysql
+    env_file: ./environment/mysql-env
+    # environment:
+    #   MYSQL_ROOT_PASSWORD: 12345
+    #   MYSQL_DATABASE: course
+    #   MYSQL_USER: user
+    #   MYSQL_PASSWORD: 12345
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    volumes:
+      - mysql-data-course:/var/lib/mysql
+    networks:
+      - net-course
+
+  client-mysql:
+    image: phpmyadmin
+    container_name: client-mysql
+    environment:
+      PMA_HOST: server-mysql
+      PMA_USER: user
+      PMA_PASSWORD: 12345
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+    ports:
+      - "8090:80"
+    depends_on:
+      server-mysql:
+        condition: service_healthy
+    networks:
+      - net-course
+
+  backend:
+    container_name: backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      PORT: 4000
+      DB_HOST: server-mysql
+      DB_PORT: 3306
+      DB_USER: user
+      DB_PASSWORD: 12345
+      DB_NAME: course
+    ports:
+      - "3000:4000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    depends_on:
+      server-mysql:
+        condition: service_healthy
+    networks:
+      - net-course
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    environment:
+      API_URL: http://localhost:3000
+    restart: unless-stopped
+    ports:
+      - "3200:80"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - net-course
+
+networks:
+  net-course:
+    driver: bridge
+    name: net-course
+
+volumes:
+  mysql-data-course:
+    name: mysql-data-course

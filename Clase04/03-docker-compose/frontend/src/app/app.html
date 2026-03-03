@@ -1,0 +1,27 @@
+<header class="courses-header">
+  <h1>Cursos disponibles</h1>
+  <p class="subtitle">{{ courses().length }} cursos encontrados</p>
+</header>
+
+@if (courses().length === 0) {
+  <div class="loading">Cargando cursos...</div>
+} @else {
+  <main class="courses-grid">
+    @for (course of courses(); track course.id) {
+      <article class="course-card">
+        <img [src]="course.imageUrl" [alt]="course.title" class="course-img" />
+        <div class="course-body">
+          <span class="badge">{{ course.category }}</span>
+          <h2 class="course-title">{{ course.title }}</h2>
+          <p class="course-description">{{ course.description }}</p>
+          <ul class="course-meta">
+            <li><strong>Instructor:</strong> {{ course.instructor }}</li>
+            <li><strong>Nivel:</strong> {{ course.level }}</li>
+            <li><strong>Duración:</strong> {{ course.duration }}h</li>
+          </ul>
+          <p class="course-price">{{ course.price | currency:'EUR':'symbol':'1.2-2' }}</p>
+        </div>
+      </article>
+    }
+  </main>
+}
