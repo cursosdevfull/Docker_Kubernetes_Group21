@@ -12,12 +12,12 @@ spec:
   selector:
     matchLabels:
       env: dev
-      app: frontend
+      app: backend
   template:
     metadata:
       labels:
         env: dev
-        app: frontend
+        app: backend
     spec:
       containers:
         - name: app-python
@@ -28,3 +28,19 @@ spec:
               "-c",
               "echo 'Página Python' > index.html && python -m http.server 9080",
             ]
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-web
+spec:
+  type: NodePort
+  selector:
+    env: dev
+    app: backend
+  ports:
+    - nodePort: 32000
+      port: 4500
+      targetPort: 9080
+      protocol: TCP
+      name: port-backend
